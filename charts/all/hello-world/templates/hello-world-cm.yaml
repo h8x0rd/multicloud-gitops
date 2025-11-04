@@ -14,7 +14,7 @@ data:
         </head>
           <body>
             <h1>Hello World!</h1>
-            <h1>This is a patched version via git</h1>
+            <h1>This is a patched version via git 2.0</h1>
             <br/>
             <h2>
             Hub Cluster domain is '{{ .Values.global.hubClusterDomain }}' <br>
