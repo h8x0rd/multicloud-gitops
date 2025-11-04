@@ -16,6 +16,7 @@ clusterGroup:
     - eso
     - config-demo
     - hello-world
+    - nginx-app
   applications:
     golang-external-secrets:
       name: golang-external-secrets
@@ -33,6 +34,11 @@ clusterGroup:
       namespace: hello-world
       argoProject: hello-world
       path: charts/all/hello-world
+    nginx-app:
+      name: nginx-app
+      namespace: my-app
+      argoProject: nginx-app
+      path: charts/all/nginx-app
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
     # The default schedule is every 10 minutes: imperative.schedule
