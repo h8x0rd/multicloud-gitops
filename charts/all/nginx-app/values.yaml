@@ -28,7 +28,7 @@ probes:
 
 config:
   indexHtml: |
-    <html><body><h1>Hello from my-app</h1></body></html>
+    <html><body><h1>Hello from my-app 2.0</h1></body></html>
   healthz: |
     ok
 
