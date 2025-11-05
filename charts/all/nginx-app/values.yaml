@@ -1,9 +1,6 @@
 nameOverride: ""
 fullnameOverride: ""
 
-namespace: "my-app"
-createNamespace: true
-
 replicaCount: 2
 
 image:
