@@ -8,7 +8,6 @@ clusterGroup:
   isHubCluster: false
   namespaces:
     - config-demo
-    - hello-world
     - golang-external-secrets
     - my-app
   # The only subscription on spokes is gitops which gets managed by ACM
@@ -16,7 +15,6 @@ clusterGroup:
   argoProjects:
     - eso
     - config-demo
-    - hello-world
     - my-app
   applications:
     golang-external-secrets:
@@ -29,12 +27,7 @@ clusterGroup:
       name: config-demo
       namespace: config-demo
       argoProject: config-demo
-      path: charts/region/nl/config-demo
-    hello-world:
-      name: hello-world
-      namespace: hello-world
-      argoProject: hello-world
-      path: charts/all/hello-world
+      path: charts/all/config-demo
     my-app:
       name: my-app
       namespace: my-app
