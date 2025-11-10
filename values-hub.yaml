@@ -90,7 +90,7 @@ clusterGroup:
       helmOverrides:
         - name: clusterGroup.isHubCluster
           value: false
-   secondRegion:
+    secondRegion:
       name: group-two
       acmlabels:
         - name: clusterGroup
