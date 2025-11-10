@@ -1,0 +1,41 @@
+nameOverride: ""
+fullnameOverride: ""
+
+replicaCount: 2
+
+image:
+  repository: "quay.io/nginx/nginx-unprivileged"
+  tag: ""
+  pullPolicy: IfNotPresent
+
+service:
+  name: web
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+containerPort: 8080
+
+probes:
+  readiness:
+    path: /healthz
+    initialDelaySeconds: 3
+    periodSeconds: 5
+  liveness:
+    path: /healthz
+    initialDelaySeconds: 10
+    periodSeconds: 10
+
+config:
+  indexHtml: |
+    <html><body><h1>Hello from my-app 2.0</h1></body></html>
+  healthz: |
+    ok
+
+route:
+  enabled: true
+  host: ""
+  tls:
+    enabled: false
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect

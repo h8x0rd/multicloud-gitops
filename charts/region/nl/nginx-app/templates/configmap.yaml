@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "my-app.fullname" . }}-content
+  namespace: {{ .Values.namespace }}
+data:
+  index.html: |
+{{- nindent 4 .Values.config.indexHtml }}
+  healthz: |
+{{- nindent 4 .Values.config.healthz }}
