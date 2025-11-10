@@ -14,7 +14,7 @@ data:
         </head>
           <body>
             <h1>
-            This is the managed cluster in the NL region<br><br>
+            This is the managed cluster in BR region<br><br>
             Hub Cluster domain is '{{ .Values.global.hubClusterDomain }}' <br>
             Pod is running on Local Cluster Domain '{{ .Values.global.localClusterDomain }}' <br>
             </h1>
