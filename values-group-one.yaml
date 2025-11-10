@@ -27,7 +27,7 @@ clusterGroup:
       name: config-demo
       namespace: config-demo
       argoProject: config-demo
-      path: charts/all/config-demo
+      path: charts/region/nl/config-demo
     hello-world:
       name: hello-world
       namespace: hello-world
