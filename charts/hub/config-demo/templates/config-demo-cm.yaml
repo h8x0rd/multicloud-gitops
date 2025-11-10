@@ -14,7 +14,7 @@ data:
         </head>
           <body>
             <h1>
-            This is the hub cluster patched version via git <br>
+            This is the hub cluster patched version via git <br><br>
             Hub Cluster domain is '{{ .Values.global.hubClusterDomain }}' <br>
             Pod is running on Local Cluster Domain '{{ .Values.global.localClusterDomain }}' <br>
             </h1>
