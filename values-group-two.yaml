@@ -32,7 +32,7 @@ clusterGroup:
       name: my-app
       namespace: my-app
       argoProject: my-app
-      path: charts/region/nl/nginx-app
+      path: charts/region/br/nginx-app
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
     # The default schedule is every 10 minutes: imperative.schedule
